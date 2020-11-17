@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Carto map</title>
+    <!-- Include CARTO VL JS from the CARTO CDN-->
+    <script src="https://libs.cartocdn.com/carto-vl/v1.4.4/carto-vl.min.js"></script>
+    <script src="numeral.min.js"></script>
+    <!-- Include Mapbox GL from the Mapbox CDN-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="map" class="mapboxgl-map"></div>
+    <aside class="toolbox">
+        <div class="box">
+            <header>
+                <h1>Population</h1>
+            </header>
+            <section class="open-sans">
+                <div class="separator"></div>
+                <div id="population" class="js-population">
+                    <!-- updated content will be displayed here -->
+                </div>
+            </section>
+        </div>
+    </aside>
+</body>
+<script src="main.js"></script>
+</html>
